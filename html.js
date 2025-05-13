@@ -1,6 +1,7 @@
-import { Hono } from "jsr:@hono/hono";
+import { Hono } from "hono";
 
 const app = new Hono();
+
 const VOID_ELEMENTS = [
 	"area",
 	"base",
@@ -30,4 +31,4 @@ app.get(":element", (c) => {
 	`);
 });
 
-export default app;
+Deno.serve(app.fetch);
