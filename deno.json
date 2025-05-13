@@ -1,4 +1,7 @@
 {
+	"tasks": {
+		"start": "deno run --allow-net html.js"
+	},
 	"imports": {
 		"hono": "jsr:@hono/hono"
 	}

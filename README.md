@@ -3,7 +3,7 @@
 A local web-app for quickly referencing live HTML elements.
 
 ```shell
-deno serve html.js
+deno task start
 ```
 
 ## Security
